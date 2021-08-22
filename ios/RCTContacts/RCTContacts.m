@@ -761,7 +761,7 @@ RCT_EXPORT_METHOD(openExistingContact:(NSDictionary *)contactData resolver:(RCTP
 
 
             // We need to wait for a short while otherwise contactViewController will not respond to the selector (it has not initialized)
-            [contactViewController performSelector:@selector(toggleEditing:) withObject:nil afterDelay:0.1];
+//            [contactViewController performSelector:@selector(toggleEditing:) withObject:nil afterDelay:0.1];
 
             // remove the activity indicator after a delay so the underlying transition will have time to complete
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
