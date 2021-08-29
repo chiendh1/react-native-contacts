@@ -508,7 +508,7 @@ public class ContactsManager extends ReactContextBaseJavaModule implements Activ
 
         try {
             Uri uri = Uri.withAppendedPath(ContactsContract.Contacts.CONTENT_URI, recordID);
-            Intent intent = new Intent(Intent.ACTION_EDIT);
+            Intent intent = new Intent(Intent.ACTION_VIEW);
             intent.setDataAndType(uri, ContactsContract.Contacts.CONTENT_ITEM_TYPE);
             intent.putExtra("finishActivityOnSaveCompleted", true);
 
